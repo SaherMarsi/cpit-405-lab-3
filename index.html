@@ -6,14 +6,68 @@
     <title>CPIT-405 Lab 3</title>
     <style>
         img {border: 30px solid; border-style: inset; border-top-color: skyblue; border-right-color: lightpink; border-bottom-color: lightgreen; border-left-color: #ffefd5;}
-        body{display: flex;justify-content: center;}
+        .image-preview{margin-top: 50px;margin-bottom: 50px;display: flex;justify-content: center;}
+
+        p > span { color: red; }
+        #header span { color: pink; }
+        span { color: green; }
+        #header *:last-child { color: orange; }
+        #header span:first-child:hover { color: blue; }
+        th{font-weight: bold;}
+        table{width: 20%;}
+        td , th{
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        }
+        body{}
+        th {
+        color: black;
+        padding: auto;
+        }
+        .div1{display: flex;justify-content: center;}
+        .tb1{display: flex;justify-content: center; margin: auto; padding: auto;}
     </style>
 </head>
 
 <body>
+    <!-- part1 -->
     <div class="image-preview">    
         <img src="https://cpit405.gitlab.io/images/KAU_logo.png">
     </div>
+    <!-- part2 -->
+    <div class="tb1">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>color</th>
+                    <th>color when mouse over</th>
+                </tr>
+            </thead>
+            
+            <tr>
+                <th>span.myclass1</th>
+                <td>Pink</td>
+                <td>Blue</td>
+            </tr>
+            <tr>
+                <th>span.myclass2</th>
+                <td>Pink</td>
+                <td>Pink</td>
+            </tr>
+            <tr>
+                <th>span.myclass3</th>
+                <td>Orange</td>
+                <td>Orange</td>
+            </tr>
+            <tr>
+                <th>span.myclass4</th>
+                <td>Red</td>
+                <td>Red</td>
+            </tr>
+        </table>
+    </div>
+
 </body>
 
 </html>
